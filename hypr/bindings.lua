@@ -10,26 +10,20 @@ o.bind("SUPER + SHIFT + M", "Music", { omarchy = "or-focus spotify" })
 o.bind("SUPER + SHIFT + ALT + M", "Music TUI", { tui = "cliamp", focus = true })
 o.bind("SUPER + SHIFT + N", "Editor", { omarchy = "editor" })
 o.bind("SUPER + SHIFT + D", "Docker", { tui = "lazydocker" })
--- o.bind("SUPER + SHIFT + G", "Signal", { launch = "signal-desktop", focus = "^signal$" })
 o.bind("SUPER + SHIFT + O", "Obsidian", { launch = "obsidian", focus = "^obsidian$" })
-o.bind("SUPER + SHIFT + W", "Typora", { launch = "typora --enable-wayland-ime" })
+o.bind("SUPER + SHIFT + T", "Typora", { launch = "typora --enable-wayland-ime" })
 o.bind("SUPER + SHIFT + SLASH", "Passwords", { launch = "1password" })
+o.bind("SUPER + CTRL + K", "Keybindings", { launch = "~/.local/share/omarchy/bin/omarchy-menu-keybindings" })
+o.bind("SUPER + SHIFT + S", "ScreenshotGrim", { launch = 'grim -g "$(slurp)" - | wl-copy' })
 
 -- Web app bindings.
-o.bind("SUPER + SHIFT + A", "ChatGPT", { webapp = "https://chatgpt.com" })
+o.bind("SUPER + SHIFT + G", "ChatGPT", { webapp = "https://chatgpt.com" })
 o.bind("SUPER + SHIFT + ALT + A", "Grok", { webapp = "https://grok.com" })
 o.bind("SUPER + SHIFT + C", "Calendar", { webapp = "https://app.hey.com/calendar/weeks/" })
-o.bind("SUPER + SHIFT + E", "Email", { webapp = "https://app.hey.com" })
+o.bind("SUPER + SHIFT + E", "Email", { webapp = "https://outlook.com" })
 o.bind("SUPER + SHIFT + Y", "YouTube", { webapp = "https://youtube.com/" })
---o.bind("SUPER + SHIFT + ALT + G", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
-o.bind("SUPER + SHIFT + G", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
-o.bind(
-	"SUPER + SHIFT + CTRL + G",
-	"Google Messages",
-	{ webapp = "https://messages.google.com/web/conversations", focus = true }
-)
+o.bind("SUPER + SHIFT + W", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
 o.bind("SUPER + SHIFT + P", "Google Photos", { webapp = "https://photos.google.com/", focus = true })
---o.bind("SUPER + SHIFT + S", "Google Maps", { webapp = "https://maps.google.com/", focus = true })
 o.bind("SUPER + SHIFT + X", "X", { webapp = "https://x.com/" })
 o.bind("SUPER + SHIFT + ALT + X", "X Post", { webapp = "https://x.com/compose/post" })
 
@@ -41,8 +35,6 @@ o.bind("SUPER + SHIFT + ALT + X", "X Post", { webapp = "https://x.com/compose/po
 -- o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-menu")
 hl.unbind("SUPER + SHIFT + P", "Google Photos", { webapp = "https://photos.google.com/", focus = true })
 o.bind("SUPER + SHIFT + P", "Pavucontrol", { launch = "pavucontrol" })
-o.bind("SUPER + CTRL + K", "Keybindings", { launch = "~/.local/share/omarchy/bin/omarchy-menu-keybindings" })
-o.bind("SUPER + SHIFT + S", "ScreenshotGrim", { launch = 'grim -g "$(slurp)" - | wl-copy' })
 
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
