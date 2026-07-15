@@ -36,6 +36,15 @@ o.bind("SUPER + SHIFT + ALT + X", "X Post", { webapp = "https://x.com/compose/po
 hl.unbind("SUPER + SHIFT + P", "Google Photos", { webapp = "https://photos.google.com/", focus = true })
 o.bind("SUPER + SHIFT + P", "Pavucontrol", { launch = "pavucontrol" })
 
+o.unbind("CTRL + RETURN")
+o.bind("ctrl + return", { flags = { "non_consuming" } })
+
+-- moving bindings
+o.bind("SUPER + h", hl.dsp.focus({ direction = "left" }))
+o.bind("SUPER + l", hl.dsp.focus({ direction = "right" }))
+o.bind("SUPER + j", hl.dsp.focus({ direction = "down" }))
+o.bind("SUPER + k", hl.dsp.focus({ direction = "up" }))
+
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")

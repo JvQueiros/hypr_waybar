@@ -5,7 +5,7 @@
   "spacing": 0,
   "height": 26,
   "width": 0,
-  "modules-left": ["custom/omarchy", "hyprland/workspaces", "group/media"],
+  "modules-left": ["hyprland/workspaces", "group/media"],
   "modules-center": ["clock#horizontal", "custom/weather", "custom/update", "custom/voxtype", "custom/screenrecording-indicator", "custom/idle-indicator", "custom/notification-silencing-indicator"],
   "modules-right": [
     "group/tray-expander",
